@@ -41,14 +41,16 @@
     #     Why does students[0]['Email'][0] use two sets of brackets?
 import student_data
 
-# print(student_data.students)
+print(student_data.students)
 students = student_data.students
 print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
-
-# What is being counted?
+print(students[35]['Combo,Name'])
+print(students[35]['Email'][0])
+print(students[35]['Email'][1])
+print(students[35]['GL'])
+print(students[35]['CPSID'])
+print(students[35]['HR'])
+# # What is being counted?
 
 # If the output is 36, what does that tell you?
 
@@ -72,7 +74,19 @@ for student in students:
     print(student['Combo,Name'])
     print(student['Email'][0])
     print(student['Email'][1])
+    print(student['HR'])
+    print(student['GL'])
+    print(student['CPSID'])
     print("_"*25)
+    
+
+if student['LName'][0] == "R":
+    print("Your name starts with R")
+    print(student['Combo,Name'])
+    print(student['HR'])
+
+
+
 
 # What does the loop variable student represent on each pass?
 
